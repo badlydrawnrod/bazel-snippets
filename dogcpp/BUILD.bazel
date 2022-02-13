@@ -1,0 +1,8 @@
+cc_binary(
+    name = "dogcpp",
+    srcs = ["dogcpp.cpp"],
+    visibility = ["//visibility:public"],
+    deps = [
+        "//doglib",
+    ],
+)

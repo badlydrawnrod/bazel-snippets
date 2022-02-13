@@ -1,0 +1,13 @@
+# Ignore CLion and its on-again/off-again Bazel plugin.
+.clwb/
+.idea/
+
+# Ignore VSCode.
+.vscode/
+
+# Ignore Bazel stuff.
+bazel-bin
+bazel-genfiles
+bazel-out
+bazel-testlogs
+bazel-bazel-snippets

@@ -1,0 +1,17 @@
+# Make Bazel print out all options from rc files.
+build --announce_rc
+
+# Uncomment the following line to default everything to static builds.
+# build --features=static_link_msvcrt
+
+# Optimised build, statically linked with the MSVC runtime.
+build:static_opt -c opt
+build:static_opt --features=static_link_msvcrt
+
+# Fast build, statically linked with the MSVC runtime.
+build:static -c fastbuild
+build:static --features=static_link_msvcrt
+
+# Debug build, statically linked with the debug MSVC runtime.
+build:static_dbg -c dbg
+build:static_dbg --features=static_link_msvcrt

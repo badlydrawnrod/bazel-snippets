@@ -15,6 +15,11 @@ To show commands only when there's a failure use `--verbose_failures`.
 $ bazel build //... --verbose_failures
 ```
 
+To select a configuration from `.bazelrc`, use `--config`.
+```
+$ bazel build //... --config=static_dbg
+```
+
 ## Running tests
 
 ### Quiet

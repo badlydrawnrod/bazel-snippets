@@ -7,6 +7,14 @@ Playing around with Bazel. Definitely a work in progress.
 $ bazel build //...
 ```
 
+To show the commands use `-s` or `--subcommands`, or `--subcommmands=pretty_print` if you want to see the arguments as a list.
+
+
+To show commands only when there's a failure use `--verbose_failures`.
+```
+$ bazel build //... --verbose_failures
+```
+
 ## Running tests
 
 ### Quiet

@@ -1,6 +1,6 @@
 cc_binary(
-    name = "raylib_demo",
-    srcs = ["raylib_demo.c"],
+    name = "hello_world",
+    srcs = ["hello_world.c"],
     visibility = ["//visibility:public"],
     deps = ["@raylib"],
 )

@@ -1,6 +1,5 @@
 cc_import(
     name = "raylib_windows",
-    hdrs = glob(["include/*.h"]),
     interface_library = "lib/raylibdll.lib",
     shared_library = "lib/raylib.dll",
 )
